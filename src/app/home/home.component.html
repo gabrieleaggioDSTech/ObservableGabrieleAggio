@@ -1,0 +1,10 @@
+<h1>Elenco Esercizi RxJS</h1>
+
+<ul>
+  <li *ngFor="let esercizio of esercizi">
+    <a [routerLink]="['/esercizi', esercizio.path]">
+      <strong>{{ esercizio.titolo }}</strong>
+    </a>
+    <p>{{ esercizio.descrizione }}</p>
+  </li>
+</ul>

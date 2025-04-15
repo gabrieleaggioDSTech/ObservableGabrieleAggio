@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject, throwError, Observer, from, fromEvent, of, interval } from 'rxjs';
 import { filter, first, last, map, skip, takeLast, takeUntil, catchError, findIndex } from 'rxjs/operators';
+import { Esercizio } from '../model/esericzio.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,25 @@ import { filter, first, last, map, skip, takeLast, takeUntil, catchError, findIn
 export class EserciziService {
 
   constructor() { }
+
+  getEsercizi(): Esercizio[] {
+    return [
+      { id: 1, titolo: 'Observable 1', descrizione: '', path: 'esercizio1' },
+      { id: 2, titolo: 'Observable 2', descrizione: '', path: 'esercizio2' },
+      { id: 3, titolo: 'Observable 3', descrizione: '', path: 'esercizio3' },
+      { id: 4, titolo: 'Observable 4', descrizione: '', path: 'esercizio4' },
+      { id: 5, titolo: 'Observable 5', descrizione: '', path: 'esercizio5' },
+      { id: 6, titolo: 'Observable 6', descrizione: '', path: 'esercizio6' },
+      { id: 7, titolo: 'Observable 7', descrizione: '', path: 'esercizio7' },
+      { id: 8, titolo: 'Observable 8', descrizione: '', path: 'esercizio8' },
+      { id: 9, titolo: 'Observable 9', descrizione: '', path: 'esercizio9' },
+      { id: 10, titolo: 'Observable 10', descrizione: '', path: 'esercizio10' },
+      { id: 11, titolo: 'Observable 11', descrizione: '', path: 'esercizio11' },
+      { id: 12, titolo: 'Observable 12', descrizione: '', path: 'esercizio12' },
+      { id: 13, titolo: 'Observable 13', descrizione: '', path: 'esercizio13' }
+    ];
+  }
+  
 
   // Esercizio 1: Creazione di un Observable
   //https://www.tektutorialshub.com/angular/rxjs-observable-using-create-of-from-in-angular/

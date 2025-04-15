@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('./esercizi/esercizi.module').then(m => m.EserciziModule)
   },
-  { path: '', redirectTo: 'esercizi/esercizio1', pathMatch: 'full' },
-  { path: '**', redirectTo: 'esercizi/esercizio1' }
+  { path: '', redirectTo: 'esercizi', pathMatch: 'full' },
+  { path: '**', redirectTo: 'esercizi' }
 ];
 
 @NgModule({
