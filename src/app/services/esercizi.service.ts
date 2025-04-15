@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, throwError, Observer, from, fromEvent, of } from 'rxjs';
-import { filter, map, takeLast } from 'rxjs/operators';
+import { Observable, Subject, throwError, Observer, from, fromEvent, of, interval } from 'rxjs';
+import { filter, first, last, map, skip, takeLast, takeUntil, catchError, findIndex } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -78,34 +78,50 @@ export class EserciziService {
 
   // Esercizio 8: takeUntil con timer e subject
   creaObservableEsercizio8(): { source$: Observable<number>, stopper$: Subject<void> } {
-    return {
-      source$: new Observable(),
-      stopper$: new Subject<void>()
-    };
+    
+    const stopper$ = new Subject<void>();
+
+    const source$ = interval(1000).pipe(
+      takeUntil(stopper$)
+    );
+    return { source$, stopper$ }
+    
   }
 
   // Esercizio 9: skip(1)
   creaObservableEsercizio9(): Observable<number> {
-    return new Observable(); // da completare
+    return of(1,2,3,4,5).pipe(
+      skip(1)
+    );
   }
 
   // Esercizio 10: first()
   creaObservableEsercizio10(): Observable<string> {
-    return new Observable(); // da completare
+    return of("apple", "banana", "cherry").pipe(
+      first()
+    );
   }
 
   // Esercizio 11: last()
   creaObservableEsercizio11(): Observable<string> {
-    return new Observable(); // da completare
+    return of("apple", "banana", "cherry").pipe(
+      last()
+    );
   }
-
   // Esercizio 12: catchError
   creaObservableEsercizio12(): Observable<string> {
-    return throwError(() => new Error('Errore simulato'));
+    return throwError(() => new Error('Errore simulato')).pipe(
+      catchError(err => {
+        console.error('Errore catturato:', err.message);
+        return of('Valore di Fallback');
+      })
+    );
   }
 
   // Esercizio 13: findIndex
   creaObservableEsercizio13(): Observable<number> {
-    return new Observable(); // da completare
+    return of(5, 15, 10).pipe(
+      findIndex(x => x > 12)
+    );
   }
 }
