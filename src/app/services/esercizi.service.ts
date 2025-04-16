@@ -24,7 +24,8 @@ export class EserciziService {
       { id: 10, titolo: 'Observable 10', descrizione: '', path: 'esercizio10' },
       { id: 11, titolo: 'Observable 11', descrizione: '', path: 'esercizio11' },
       { id: 12, titolo: 'Observable 12', descrizione: '', path: 'esercizio12' },
-      { id: 13, titolo: 'Observable 13', descrizione: '', path: 'esercizio13' }
+      { id: 13, titolo: 'Observable 13', descrizione: '', path: 'esercizio13' },
+      { id: 14, titolo: 'Angular Base 14', descrizione: '', path: 'esercizio14'}
     ];
   }
   
@@ -144,4 +145,7 @@ export class EserciziService {
       findIndex(x => x > 12)
     );
   }
+
+
+
 }

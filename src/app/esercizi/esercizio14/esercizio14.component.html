@@ -1,0 +1,17 @@
+<div class="esercizio">
+    <h2>ESERCIZIO 14</h2>
+    <h3>
+      Testo esercizio:
+      Input Binding - 
+      Un componente figlio riceve un valore dal padre e lo mostra nel template.
+  
+      <section class="azioni">
+        <button (click)="esegui()">Avvia</button>
+        <button (click)="reset()">Reset</button>
+      </section>
+  
+      <div class="contenuto">
+        <!--risultati eserc -->
+        <p>*******ESERCIZIO*******</p>
+        <app-figlio *ngIf="mostraFiglio" [outputParent]="output"></app-figlio>
+      </div>

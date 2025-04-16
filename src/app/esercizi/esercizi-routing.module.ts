@@ -15,6 +15,8 @@ import { Esercizio10Component } from './esercizio10/esercizio10.component';
 import { Esercizio11Component } from './esercizio11/esercizio11.component';
 import { Esercizio12Component } from './esercizio12/esercizio12.component';
 import { Esercizio13Component } from './esercizio13/esercizio13.component';
+import { Esercizio14Component } from './esercizio14/esercizio14.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,7 +32,8 @@ const routes: Routes = [
   { path: 'esercizio10', component: Esercizio10Component },
   { path: 'esercizio11', component: Esercizio11Component },
   { path: 'esercizio12', component: Esercizio12Component },
-  { path: 'esercizio13', component: Esercizio13Component }
+  { path: 'esercizio13', component: Esercizio13Component },
+  { path: 'esercizio14', component: Esercizio14Component }
 ];
 
 @NgModule({
