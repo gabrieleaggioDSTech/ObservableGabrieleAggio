@@ -1,0 +1,18 @@
+<div class="esercizio">
+    <h2>ESERCIZIO 15</h2>
+    <h3>
+      Testo esercizio:
+      Input Binding - 
+      Il figlio emette un valore (es. numero casuale) al padre, che lo visualizza.
+  
+      <section class="azioni">
+        <button (click)="esegui()">Avvia</button>
+        <button (click)="reset()">Reset</button>
+      </section>
+  
+      <div class="contenuto">
+        <!--risultati eserc -->
+        <p>*******ESERCIZIO*******</p>
+        <app-figlio (numeroGenerato)="mostraNumero($event)"></app-figlio>
+        <pre>{{ output }}</pre>
+      </div>

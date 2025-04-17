@@ -17,6 +17,8 @@ import { Esercizio12Component } from './esercizio12/esercizio12.component';
 import { Esercizio13Component } from './esercizio13/esercizio13.component';
 import { Esercizio14Component } from './esercizio14/esercizio14.component';
 import { FiglioComponent } from './esercizio14/figlio/figlio.component';
+import { Esercizio15Component } from './esercizio15/esercizio15.component';
+import { FiglioComponent15 } from './esercizio15/figlio/figlio.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { FiglioComponent } from './esercizio14/figlio/figlio.component';
     Esercizio12Component,
     Esercizio13Component,
     Esercizio14Component,
-    FiglioComponent
+    FiglioComponent,
+    Esercizio15Component,
+    FiglioComponent15
   ],
   imports: [
     CommonModule,
