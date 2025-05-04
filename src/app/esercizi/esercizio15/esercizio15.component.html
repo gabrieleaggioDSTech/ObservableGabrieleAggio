@@ -1,18 +1,18 @@
 <div class="esercizio">
-    <h2>ESERCIZIO 15</h2>
-    <h3>
-      Testo esercizio:
-      Input Binding - 
-      Il figlio emette un valore (es. numero casuale) al padre, che lo visualizza.
-  
-      <section class="azioni">
-        <button (click)="esegui()">Avvia</button>
-        <button (click)="reset()">Reset</button>
-      </section>
-  
-      <div class="contenuto">
-        <!--risultati eserc -->
-        <p>*******ESERCIZIO*******</p>
-        <app-figlio (numeroGenerato)="mostraNumero($event)"></app-figlio>
-        <pre>{{ output }}</pre>
-      </div>
+  <h2>{{ 'ESERCIZIO' | translate }} {{ esercizioId }}</h2>
+
+  <h3>
+    {{ 'TESTO_ESE' | translate }}:<br />
+    {{ ('ES' + esercizioId + '_DESC') | translate }}
+  </h3>
+
+  <section class="azioni">
+    <button (click)="esegui()">{{ 'AVVIA' | translate }}</button>
+    <button (click)="reset()">{{ 'RESET' | translate }}</button>
+  </section>
+
+  <div class="contenuto">
+    <p>*******{{ 'RISULTATO' | translate }}*******</p>
+    <pre>{{ output }}</pre>
+  </div>
+</div>

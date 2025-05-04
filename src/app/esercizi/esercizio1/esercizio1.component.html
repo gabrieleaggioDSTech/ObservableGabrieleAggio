@@ -1,19 +1,18 @@
 <div class="esercizio">
-    <h2>ESERCIZIO 1</h2>
-    <h3>
-        Testo esercizio:
-        Crea un Observable che emetta una sequenza di numeri (ad esempio, 1, 2, 3) e poi si completi.
-    </h3>
-  
-    <section class="azioni">
-      <button (click)="esegui()">Avvia</button>
-      <button (click)="reset()">Reset</button>
-    </section>
-    
-    <div class="contenuto">
-      <!--risultati eserc -->
-      <p>*******ESERCIZIO*******</p>
-      <pre>{{ output }}</pre>
-    </div>
+  <h2>{{ 'ESERCIZIO' | translate }} {{ esercizioId }}</h2>
+
+  <h3>
+    {{ 'TESTO_ESE' | translate }}:<br />
+    {{ ('ES' + esercizioId + '_DESC') | translate }}
+  </h3>
+
+  <section class="azioni">
+    <button (click)="esegui()">{{ 'AVVIA' | translate }}</button>
+    <button (click)="reset()">{{ 'RESET' | translate }}</button>
+  </section>
+
+  <div class="contenuto">
+    <p>*******{{ 'RISULTATO' | translate }}*******</p>
+    <pre>{{ output }}</pre>
   </div>
-  
+</div>

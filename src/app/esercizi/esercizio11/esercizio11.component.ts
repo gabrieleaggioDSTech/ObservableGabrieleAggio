@@ -13,6 +13,7 @@ export class Esercizio11Component extends BaseEsercizio {
 
   output : string = '';
   subscription : Subscription | null = null;
+  esercizioId = 11;
 
   constructor(private eserciziService : EserciziService) {
     super();

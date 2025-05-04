@@ -1,0 +1,39 @@
+.esercizio {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    margin: 2rem 0;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  
+    .azioni {
+      margin-bottom: 1rem;
+  
+      button {
+        margin-right: 1rem;
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        background-color: #007acc;
+        color: white;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #005a99;
+        }
+      }
+    }
+  
+    .contenuto {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      min-height: 100px;
+    }
+  }
+  

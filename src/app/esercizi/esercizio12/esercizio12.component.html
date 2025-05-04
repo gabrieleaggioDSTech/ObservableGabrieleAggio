@@ -1,17 +1,18 @@
 <div class="esercizio">
-  <h2>ESERCIZIO 12</h2>
+  <h2>{{ 'ESERCIZIO' | translate }} {{ esercizioId }}</h2>
+
   <h3>
-    Testo esercizio:
-    Crea un Observable che simuli un errore (throwError) e intercetta l'errore con catchError, restituendo of('Fallback
-    Value').
+    {{ 'TESTO_ESE' | translate }}:<br />
+    {{ ('ES' + esercizioId + '_DESC') | translate }}
+  </h3>
 
-    <section class="azioni">
-      <button (click)="esegui()">Avvia</button>
-      <button (click)="reset()">Reset</button>
-    </section>
+  <section class="azioni">
+    <button (click)="esegui()">{{ 'AVVIA' | translate }}</button>
+    <button (click)="reset()">{{ 'RESET' | translate }}</button>
+  </section>
 
-    <div class="contenuto">
-      <!--risultati eserc -->
-      <p>*******ESERCIZIO*******</p>
-      <pre>{{ output }}</pre>
-    </div>
+  <div class="contenuto">
+    <p>*******{{ 'RISULTATO' | translate }}*******</p>
+    <pre>{{ output }}</pre>
+  </div>
+</div>

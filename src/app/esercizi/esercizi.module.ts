@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 import { EserciziRoutingModule } from './esercizi-routing.module';
 import { Esercizio1Component } from './esercizio1/esercizio1.component';
@@ -43,7 +45,8 @@ import { FiglioComponent15 } from './esercizio15/figlio/figlio.component';
   ],
   imports: [
     CommonModule,
-    EserciziRoutingModule
+    EserciziRoutingModule,
+    TranslateModule
   ]
 })
 export class EserciziModule { }

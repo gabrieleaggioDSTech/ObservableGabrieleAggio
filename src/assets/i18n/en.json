@@ -1,0 +1,25 @@
+{
+  "WELCOME": "Welcome",
+  "TITOLO": "RxJS Exercises",
+  "ESERCIZIO": "Exercise",
+  "TESTO_ESE": "Exercise text",
+  "AVVIA": "Start",
+  "RESET": "Reset",
+  "RISULTATO": "Output",
+
+  "ES1_DESC": "Create an Observable that emits a sequence of numbers (e.g., 1, 2, 3) and then completes.",
+  "ES2_DESC": "Create a simple Observer that logs emitted values and the completion notification of the Observable created in Exercise 1.",
+  "ES3_DESC": "Use the 'from' operator to convert an array of strings into an Observable that emits each string. Subscribe and log the values.",
+  "ES4_DESC": "Use 'fromEvent' to create an Observable that emits click events from an element with ID 'myButton'.",
+  "ES5_DESC": "Create an Observable that emits numbers from 1 to 5 and use 'map' to multiply each by 10. Subscribe and display.",
+  "ES6_DESC": "Create an Observable that emits numbers from 1 to 10 and use 'filter' to keep only even numbers.",
+  "ES7_DESC": "Create an Observable that emits numbers from 1 to 7 and use 'takeLast(2)' to get only the last two numbers.",
+  "ES8_DESC": "Create an Observable that emits a number every second and a second Observable (Subject) that emits after 3 seconds. Use 'takeUntil' to stop the first.",
+  "ES9_DESC": "Create an Observable that emits numbers from 1 to 5 and use 'skip(1)' to skip the first one.",
+  "ES10_DESC": "Create an Observable that emits the strings 'apple', 'banana', 'cherry' and use 'first()' to get only the first one.",
+  "ES11_DESC": "Create an Observable that emits 'apple', 'banana', 'cherry' and then completes. Use 'last()' to get only the last.",
+  "ES12_DESC": "Create an Observable that simulates an error using 'throwError' and handle it with 'catchError' returning 'of(\"Fallback Value\")'.",
+  "ES13_DESC": "Create an Observable that emits 5, 15, 10 and use 'findIndex' to get the index of the first number greater than 12.",
+  "ES14_DESC": "A child component receives a value from the parent and displays it in the template.",
+  "ES15_DESC": "The child emits a value (e.g., a random number) to the parent, who displays it."
+}

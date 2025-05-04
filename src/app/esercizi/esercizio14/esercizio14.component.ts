@@ -11,6 +11,7 @@ export class Esercizio14Component extends BaseEsercizio implements OnInit {
   
   output : string = "Questa stringa viene dal PARENT";
   mostraFiglio : boolean = false;
+  esercizioId = 14;
 
   constructor(private eserciziService : EserciziService) { 
     super();

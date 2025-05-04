@@ -12,6 +12,7 @@ export class Esercizio15Component extends BaseEsercizio implements OnInit {
   
 
   output: string = '';
+  esercizioId = 15;
 
   mostraNumero(numero: number): void {
   this.output = `Numero ricevuto dal figlio: ${numero}`;

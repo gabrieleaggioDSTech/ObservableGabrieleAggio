@@ -1,0 +1,25 @@
+{
+  "WELCOME": "Benvenuto",
+  "TITOLO": "Esercizi RxJS",
+  "ESERCIZIO": "Esercizio",
+  "TESTO_ESE": "Testo esercizio",
+  "AVVIA": "Avvia",
+  "RESET": "Reset",
+  "RISULTATO": "Risultato",
+
+  "ES1_DESC": "Crea un Observable che emetta una sequenza di numeri (ad esempio, 1, 2, 3) e poi si completi.",
+  "ES2_DESC": "Crea un Observer semplice che logghi in console i valori emessi e la notifica di completamento dell'Observable creato nell'esercizio 1.",
+  "ES3_DESC": "Utilizza l’operatore from per convertire un array di stringhe in un Observable che emette ogni stringa. Sottoscrivi e logga i valori.",
+  "ES4_DESC": "Utilizza fromEvent per creare un Observable che emette eventi di click su un elemento con ID myButton.",
+  "ES5_DESC": "Crea un Observable che emetta i numeri da 1 a 5 e usa map per moltiplicare ogni numero per 10. Sottoscrivi e visualizza.",
+  "ES6_DESC": "Crea un Observable che emetta i numeri da 1 a 10 e usa filter per mantenere solo i numeri pari.",
+  "ES7_DESC": "Crea un Observable che emetta i numeri da 1 a 7 e usa takeLast(2) per ottenere solo gli ultimi due numeri.",
+  "ES8_DESC": "Crea un Observable che emette numeri ogni secondo e un secondo Observable (Subject) che emette dopo 3 secondi. Usa takeUntil per interrompere il primo.",
+  "ES9_DESC": "Crea un Observable che emetta i numeri da 1 a 5 e usa skip(1) per saltare il primo.",
+  "ES10_DESC": "Crea un Observable che emetta le stringhe 'apple', 'banana', 'cherry' e usa first() per ottenere solo la prima.",
+  "ES11_DESC": "Crea un Observable che emetta 'apple', 'banana', 'cherry' e poi si completi. Usa last() per ottenere solo l’ultima.",
+  "ES12_DESC": "Crea un Observable che simuli un errore (throwError) e intercetta l’errore con catchError, restituendo of('Fallback Value').",
+  "ES13_DESC": "Crea un Observable che emetta 5, 15, 10 e usa findIndex per trovare l’indice del primo numero maggiore di 12.",
+  "ES14_DESC": "Un componente figlio riceve un valore dal padre e lo mostra nel template.",
+  "ES15_DESC": "Il figlio emette un valore (es. numero casuale) al padre, che lo visualizza."
+}

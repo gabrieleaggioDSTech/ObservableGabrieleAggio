@@ -10,6 +10,7 @@ import { EserciziService } from 'src/app/services/esercizi.service';
 export class Esercizio2Component extends BaseEsercizio{
 
   output: string = '';
+  esercizioId = 2;
 
   constructor(private eserciziService : EserciziService) {
     super();
