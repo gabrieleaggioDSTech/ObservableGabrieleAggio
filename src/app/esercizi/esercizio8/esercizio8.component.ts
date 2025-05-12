@@ -3,6 +3,7 @@ import { BaseEsercizio } from '../base-esercizio.component';
 import { EserciziService } from 'src/app/services/esercizi.service';
 import { Subscription } from 'rxjs';
 
+
 @Component({
   selector: 'app-esercizio8',
   templateUrl: './esercizio8.component.html',
